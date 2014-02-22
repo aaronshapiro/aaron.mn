@@ -1,0 +1,49 @@
+@import url(http://fonts.googleapis.com/css?family=Karla:700);
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #4B6FE1;
+	color: #FFF;
+	font-family: 'Karla', Arial, serif;
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 42px;
+	text-align: center;
+}
+
+a {
+	color: #A1B7FF;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #FFF;
+}
+
+p {
+	margin-bottom: 32px;	
+}
+
+.wrapper {
+	bottom: 0;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.vertical-center {
+	margin: 0 auto;
+	max-width: 550px;
+	padding: 20px;
+	position: relative;
+	top: 50%;
+	-moz-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
