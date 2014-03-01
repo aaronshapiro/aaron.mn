@@ -32,12 +32,12 @@ p {
   p.lead {
     font-size: 28px;
     font-weight: 500;
-    line-height: 38px; }
+    line-height: 37px; }
 
-.body-wrapper {
-  height: 100%;
-  overflow-x: hidden;
-  width: 100%; }
+small {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase; }
 
 .vertical-align-wrapper, .introduction-wrapper, .info-wrapper {
   height: 100%;
@@ -54,6 +54,12 @@ p {
 
 .hidden {
   display: none; }
+
+.clearfix:before, .info-wrapper .info:before, .clearfix:after, .info-wrapper .info:after {
+  content: " ";
+  display: table; }
+.clearfix:after, .info-wrapper .info:after {
+  clear: both; }
 
 .animated, .introduction-wrapper .introduction ul, .info-wrapper, .info-wrapper .info {
   -webkit-animation-duration: 0.75s;
@@ -247,6 +253,7 @@ p {
   padding: 40px;
   right: 0;
   top: 0;
+  -moz-transition: left 0.25s;
   -webkit-transition: left 0.25s;
   transition: left 0.25s;
   z-index: 2; }
@@ -259,10 +266,25 @@ p {
     margin: 0 auto;
     max-width: 830px;
     opacity: 0;
-    margin-bottom: 80px;
     position: relative; }
-    .info-wrapper .info p:last-child {
-      margin-bottom: 40px; }
+    .info-wrapper .info a {
+      border-bottom: 2px solid #504C2F;
+      color: #504C2F;
+      display: inline-block;
+      margin-bottom: -3px;
+      padding-bottom: 1px;
+      -moz-transition: all 0.25s;
+      -webkit-transition: all 0.25s;
+      transition: all 0.25s; }
+      .info-wrapper .info a:hover {
+        color: #504C2F;
+        margin-bottom: -5px;
+        padding-bottom: 3px; }
+    @media screen and (min-width: 670px) {
+      .info-wrapper .info .column {
+        float: left;
+        padding: 0 20px;
+        width: 50%; } }
 
 .info-mask {
   background-color: transparent;

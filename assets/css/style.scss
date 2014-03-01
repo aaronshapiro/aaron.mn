@@ -42,14 +42,14 @@ p {
     &.lead {
         font-size: 28px;
         font-weight: 500;
-        line-height: 38px;
+        line-height: 37px;
     }
 }
 
-.body-wrapper {
-    height: 100%;
-    overflow-x: hidden;
-    width: 100%;
+small {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 .vertical-align-wrapper {
@@ -70,6 +70,16 @@ p {
 
 .hidden {
     display: none;
+}
+
+.clearfix {
+    &:before, &:after {
+        content: " ";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
 }
 
 // Animations
@@ -336,6 +346,7 @@ p {
     padding: 40px;
     right: 0;
     top: 0;
+    -moz-transition: left 0.25s;
     -webkit-transition: left 0.25s;
     transition: left 0.25s;
     z-index: 2;
@@ -346,17 +357,38 @@ p {
 
     .info {
         @extend .animated;
+        @extend .clearfix;
         @extend .vertical-align;
         -webkit-animation-delay: 0.8s;
         animation-delay: 0.8s;
         margin: 0 auto;
         max-width: 830px;
         opacity: 0;
-        margin-bottom: 80px;
         position: relative;
 
-        p:last-child {
-            margin-bottom: 40px;
+        a {
+            border-bottom: 2px solid #504C2F;
+            color: #504C2F;
+            display: inline-block;
+            margin-bottom: -3px;
+            padding-bottom: 1px;
+            -moz-transition: all 0.25s;
+            -webkit-transition: all 0.25s;
+            transition: all 0.25s;
+            
+            &:hover {
+                color: #504C2F;
+                margin-bottom: -5px;
+                padding-bottom: 3px;
+            }
+        }
+
+        @media screen and (min-width: 670px) {
+            .column {
+                float: left;
+                padding: 0 20px;
+                width: 50%;
+            }
         }
 
     }
