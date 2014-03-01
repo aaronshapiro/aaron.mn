@@ -69,21 +69,7 @@ p {
 }
 
 .hidden {
-    position: absolute; 
-    overflow: hidden; 
-    clip: rect(0 0 0 0); 
-    height: 1px; width: 1px; 
-    margin: -1px; padding: 0; border: 0; 
-}
-
-.clearfix {
-    &:before, &:after {
-        content: " ";
-        display: table;
-    }
-    &:after {
-        clear: both;
-    }
+    display: none;
 }
 
 // Animations
@@ -182,7 +168,7 @@ p {
     animation-name: fade-in-up;
 }
 
-@-webkit-keyframes bounce-in-right {
+@-webkit-keyframes bounce-in {
     0% {
         opacity: 0;
         -webkit-transform: translateX(2000px);
@@ -206,7 +192,7 @@ p {
     }
 }
 
-@keyframes bounce-in-right {
+@keyframes bounce-in {
     0% {
         -webkit-transform: translateX(2000px);
         -ms-transform: translateX(2000px);
@@ -232,12 +218,12 @@ p {
     }
 }
 
-.bounce-in-right {
-    -webkit-animation-name: bounce-in-right;
-    animation-name: bounce-in-right;
+.bounce-in {
+    -webkit-animation-name: bounce-in;
+    animation-name: bounce-in;
 }
 
-@-webkit-keyframes bounce-out-right {
+@-webkit-keyframes bounce-out {
     0% {
         -webkit-transform: translateX(0);
         transform: translateX(0);
@@ -254,7 +240,7 @@ p {
     }
 }
 
-@keyframes bounce-out-right {
+@keyframes bounce-out {
     0% {
         -webkit-transform: translateX(0);
         -ms-transform: translateX(0);
@@ -274,9 +260,9 @@ p {
     }
 }
 
-.bounce-out-right {
-    -webkit-animation-name: bounce-out-right;
-    animation-name: bounce-out-right;
+.bounce-out {
+    -webkit-animation-name: bounce-out;
+    animation-name: bounce-out;
 }
 
 // Introduction
@@ -328,7 +314,7 @@ p {
             font-weight: 500;
             margin: 0 20px 10px 0;
 
-            @media screen and (max-width: 670px) {
+            @media screen and (max-width: 400px) {
                 float: none;
             }
 

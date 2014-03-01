@@ -53,20 +53,7 @@ p {
     transform: translateY(-50%); } }
 
 .hidden {
-  position: absolute;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  width: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0; }
-
-.clearfix:before, .clearfix:after {
-  content: " ";
-  display: table; }
-.clearfix:after {
-  clear: both; }
+  display: none; }
 
 .animated, .introduction-wrapper .introduction ul, .info-wrapper, .info-wrapper .info {
   -webkit-animation-duration: 0.75s;
@@ -138,7 +125,7 @@ p {
   -webkit-animation-name: fade-in-up;
   animation-name: fade-in-up; }
 
-@-webkit-keyframes bounce-in-right {
+@-webkit-keyframes bounce-in {
   0% {
     opacity: 0;
     -webkit-transform: translateX(2000px);
@@ -157,7 +144,7 @@ p {
     -webkit-transform: translateX(0);
     transform: translateX(0); } }
 
-@keyframes bounce-in-right {
+@keyframes bounce-in {
   0% {
     -webkit-transform: translateX(2000px);
     -ms-transform: translateX(2000px);
@@ -178,11 +165,11 @@ p {
     -ms-transform: translateX(0);
     transform: translateX(0); } }
 
-.bounce-in-right {
-  -webkit-animation-name: bounce-in-right;
-  animation-name: bounce-in-right; }
+.bounce-in {
+  -webkit-animation-name: bounce-in;
+  animation-name: bounce-in; }
 
-@-webkit-keyframes bounce-out-right {
+@-webkit-keyframes bounce-out {
   0% {
     -webkit-transform: translateX(0);
     transform: translateX(0); }
@@ -195,7 +182,7 @@ p {
     -webkit-transform: translateX(2000px);
     transform: translateX(2000px); } }
 
-@keyframes bounce-out-right {
+@keyframes bounce-out {
   0% {
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
@@ -211,9 +198,9 @@ p {
     -ms-transform: translateX(2000px);
     transform: translateX(2000px); } }
 
-.bounce-out-right {
-  -webkit-animation-name: bounce-out-right;
-  animation-name: bounce-out-right; }
+.bounce-out {
+  -webkit-animation-name: bounce-out;
+  animation-name: bounce-out; }
 
 .introduction-wrapper {
   bottom: 0;
@@ -248,7 +235,7 @@ p {
       float: left;
       font-weight: 500;
       margin: 0 20px 10px 0; }
-      @media screen and (max-width: 670px) {
+      @media screen and (max-width: 400px) {
         .introduction-wrapper .introduction li {
           float: none; } }
 
