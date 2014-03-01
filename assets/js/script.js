@@ -31,9 +31,5 @@ $(document).ready(function() {
         return false;
     });
 
-    $(window).resize(function() {
-        console.log($(window).width());
-    });
-
 });
 
