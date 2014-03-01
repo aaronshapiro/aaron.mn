@@ -1,6 +1,7 @@
 $(document).ready(function() {
     $('.info-link').click(function() {
         $('.info-wrapper').addClass('info-wrapper-open');
+        return false;
     });
     $('.info-wrapper').click(function() {
         if ($(this).hasClass('info-wrapper-open')) {
@@ -12,6 +13,7 @@ $(document).ready(function() {
                         .off('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend');
                 });
         }
+        return false;
     });
 });
 
