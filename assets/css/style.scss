@@ -23,7 +23,6 @@ body {
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
-    overflow: hidden;
 }
 
 a {
@@ -45,6 +44,12 @@ p {
         font-weight: 500;
         line-height: 36px;
     }
+}
+
+.body-wrapper {
+    height: 100%;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 .vertical-align-wrapper {
@@ -82,7 +87,7 @@ p {
     animation-fill-mode: both;
 }
 
-@-webkit-keyframes fadeIn {
+@-webkit-keyframes fade-in {
     0% {
         opacity: 0;
     }
@@ -92,7 +97,7 @@ p {
     }
 }
 
-@keyframes fadeIn {
+@keyframes fade-in {
     0% {
         opacity: 0;
     }
@@ -102,12 +107,12 @@ p {
     }
 }
 
-.fadeIn {
-    -webkit-animation-name: fadeIn;
-    animation-name: fadeIn;
+.fade-in {
+    -webkit-animation-name: fade-in;
+    animation-name: fade-in;
 }
 
-@-webkit-keyframes fadeOut {
+@-webkit-keyframes fade-out {
     0% {
         opacity: 1;
     }
@@ -117,7 +122,7 @@ p {
     }
 }
 
-@keyframes fadeOut {
+@keyframes fade-out {
     0% {
         opacity: 1;
     }
@@ -127,12 +132,12 @@ p {
     }
 }
 
-.fadeOut {
-    -webkit-animation-name: fadeOut;
-    animation-name: fadeOut;
+.fade-out {
+    -webkit-animation-name: fade-out;
+    animation-name: fade-out;
 }
 
-@-webkit-keyframes fadeInUp {
+@-webkit-keyframes fade-in-up {
     0% {
         opacity: 0;
         -webkit-transform: translateY(10px);
@@ -146,7 +151,7 @@ p {
     }
 }
 
-@keyframes fadeInUp {
+@keyframes fade-in-up {
     0% {
         opacity: 0;
         -webkit-transform: translateY(10px);
@@ -162,12 +167,12 @@ p {
     }
 }
 
-.fadeInUp {
-    -webkit-animation-name: fadeInUp;
-    animation-name: fadeInUp;
+.fade-in-up {
+    -webkit-animation-name: fade-in-up;
+    animation-name: fade-in-up;
 }
 
-@-webkit-keyframes bounceInRight {
+@-webkit-keyframes bounce-in-right {
     0% {
         opacity: 0;
         -webkit-transform: translateX(2000px);
@@ -191,7 +196,7 @@ p {
     }
 }
 
-@keyframes bounceInRight {
+@keyframes bounce-in-right {
     0% {
         -webkit-transform: translateX(2000px);
         -ms-transform: translateX(2000px);
@@ -217,12 +222,12 @@ p {
     }
 }
 
-.bounceInRight {
-    -webkit-animation-name: bounceInRight;
-    animation-name: bounceInRight;
+.bounce-in-right {
+    -webkit-animation-name: bounce-in-right;
+    animation-name: bounce-in-right;
 }
 
-@-webkit-keyframes bounceOutRight {
+@-webkit-keyframes bounce-out-right {
     0% {
         -webkit-transform: translateX(0);
         transform: translateX(0);
@@ -239,7 +244,7 @@ p {
     }
 }
 
-@keyframes bounceOutRight {
+@keyframes bounce-out-right {
     0% {
         -webkit-transform: translateX(0);
         -ms-transform: translateX(0);
@@ -259,9 +264,9 @@ p {
     }
 }
 
-.bounceOutRight {
-    -webkit-animation-name: bounceOutRight;
-    animation-name: bounceOutRight;
+.bounce-out-right {
+    -webkit-animation-name: bounce-out-right;
+    animation-name: bounce-out-right;
 }
 
 // Introduction
@@ -300,7 +305,7 @@ p {
 
         ul {
             @extend .animated;
-            @extend .fadeInUp;
+            @extend .fade-in-up;
             -webkit-animation-delay: 1s;
             animation-delay: 1s;
             list-style: none;
@@ -323,31 +328,27 @@ p {
     @extend .animated;
     @extend .vertical-align-wrapper;
     background-color: #FFDC00;
-    bottom: 0;
-    left: 100%;
     overflow: scroll;
-    padding: 100px 70px 100px 40px;
-    position: absolute;
-    right: -10px;
-    top: 0;
+    padding: 40px;
+    right: -9999px;
+    top: -9999px;
+    visibility: hidden;
 
     &:hover {
         cursor: e-resize;
     }
 
     &.info-wrapper-open {
-        @extend .bounceInRight;
         left: 80px;
+        right: 0;
+        top: 0;
         -webkit-transition: left 0.25s;
         transition: left 0.25s;
+        visibility: visible;
 
         @media screen and (max-width: 670px) {
             left: 0;
         }
-    }
-
-    &.info-wrapper-closing {
-        @extend .bounceOutRight;
     }
 
     .info {

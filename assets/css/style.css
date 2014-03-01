@@ -17,8 +17,7 @@ body {
   font-family: 'futura-pt', Arial, sans-serif;
   font-size: 20px;
   font-weight: 400;
-  line-height: 30px;
-  overflow: hidden; }
+  line-height: 30px; }
 
 a {
   color: #6E7C98;
@@ -34,6 +33,11 @@ p {
     font-size: 24px;
     font-weight: 500;
     line-height: 36px; }
+
+.body-wrapper {
+  height: 100%;
+  overflow-x: hidden;
+  width: 100%; }
 
 .vertical-align-wrapper, .introduction-wrapper, .info-wrapper {
   height: 100%;
@@ -59,43 +63,43 @@ p {
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both; }
 
-@-webkit-keyframes fadeIn {
+@-webkit-keyframes fade-in {
   0% {
     opacity: 0; }
 
   100% {
     opacity: 1; } }
 
-@keyframes fadeIn {
+@keyframes fade-in {
   0% {
     opacity: 0; }
 
   100% {
     opacity: 1; } }
 
-.fadeIn {
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn; }
+.fade-in {
+  -webkit-animation-name: fade-in;
+  animation-name: fade-in; }
 
-@-webkit-keyframes fadeOut {
+@-webkit-keyframes fade-out {
   0% {
     opacity: 1; }
 
   100% {
     opacity: 0; } }
 
-@keyframes fadeOut {
+@keyframes fade-out {
   0% {
     opacity: 1; }
 
   100% {
     opacity: 0; } }
 
-.fadeOut {
-  -webkit-animation-name: fadeOut;
-  animation-name: fadeOut; }
+.fade-out {
+  -webkit-animation-name: fade-out;
+  animation-name: fade-out; }
 
-@-webkit-keyframes fadeInUp {
+@-webkit-keyframes fade-in-up {
   0% {
     opacity: 0;
     -webkit-transform: translateY(10px);
@@ -106,7 +110,7 @@ p {
     -webkit-transform: translateY(0);
     transform: translateY(0); } }
 
-@keyframes fadeInUp {
+@keyframes fade-in-up {
   0% {
     opacity: 0;
     -webkit-transform: translateY(10px);
@@ -119,11 +123,11 @@ p {
     -ms-transform: translateY(0);
     transform: translateY(0); } }
 
-.fadeInUp, .introduction-wrapper .introduction ul {
-  -webkit-animation-name: fadeInUp;
-  animation-name: fadeInUp; }
+.fade-in-up, .introduction-wrapper .introduction ul {
+  -webkit-animation-name: fade-in-up;
+  animation-name: fade-in-up; }
 
-@-webkit-keyframes bounceInRight {
+@-webkit-keyframes bounce-in-right {
   0% {
     opacity: 0;
     -webkit-transform: translateX(2000px);
@@ -142,7 +146,7 @@ p {
     -webkit-transform: translateX(0);
     transform: translateX(0); } }
 
-@keyframes bounceInRight {
+@keyframes bounce-in-right {
   0% {
     -webkit-transform: translateX(2000px);
     -ms-transform: translateX(2000px);
@@ -163,11 +167,11 @@ p {
     -ms-transform: translateX(0);
     transform: translateX(0); } }
 
-.bounceInRight, .info-wrapper.info-wrapper-open {
-  -webkit-animation-name: bounceInRight;
-  animation-name: bounceInRight; }
+.bounce-in-right {
+  -webkit-animation-name: bounce-in-right;
+  animation-name: bounce-in-right; }
 
-@-webkit-keyframes bounceOutRight {
+@-webkit-keyframes bounce-out-right {
   0% {
     -webkit-transform: translateX(0);
     transform: translateX(0); }
@@ -180,7 +184,7 @@ p {
     -webkit-transform: translateX(2000px);
     transform: translateX(2000px); } }
 
-@keyframes bounceOutRight {
+@keyframes bounce-out-right {
   0% {
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
@@ -196,9 +200,9 @@ p {
     -ms-transform: translateX(2000px);
     transform: translateX(2000px); } }
 
-.bounceOutRight, .info-wrapper.info-wrapper-closing {
-  -webkit-animation-name: bounceOutRight;
-  animation-name: bounceOutRight; }
+.bounce-out-right {
+  -webkit-animation-name: bounce-out-right;
+  animation-name: bounce-out-right; }
 
 .introduction-wrapper {
   bottom: 0;
@@ -235,19 +239,20 @@ p {
 
 .info-wrapper {
   background-color: #FFDC00;
-  bottom: 0;
-  left: 100%;
   overflow: scroll;
-  padding: 100px 70px 100px 40px;
-  position: absolute;
-  right: -10px;
-  top: 0; }
+  padding: 40px;
+  right: -9999px;
+  top: -9999px;
+  visibility: hidden; }
   .info-wrapper:hover {
     cursor: e-resize; }
   .info-wrapper.info-wrapper-open {
     left: 80px;
+    right: 0;
+    top: 0;
     -webkit-transition: left 0.25s;
-    transition: left 0.25s; }
+    transition: left 0.25s;
+    visibility: visible; }
     @media screen and (max-width: 670px) {
       .info-wrapper.info-wrapper-open {
         left: 0; } }
