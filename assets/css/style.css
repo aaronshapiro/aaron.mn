@@ -1,4 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -14,10 +13,12 @@
 
 body {
   background-color: #2B303B;
-  color: #6E7C98;
-  font-family: 'Montserrat', Arial, serif;
+  color: #666666;
+  font-family: 'futura-pt', Arial, sans-serif;
   font-size: 18px;
-  font-weight: 400; }
+  font-weight: 400;
+  line-height: 30px;
+  overflow: hidden; }
 
 a {
   color: #6E7C98;
@@ -26,6 +27,30 @@ a {
   transition: color 0.25s; }
   a:hover {
     color: #FFF; }
+
+p {
+  margin-bottom: 18px; }
+  p.lead {
+    color: #333;
+    font-size: 24px;
+    line-height: 36px; }
+
+.vertical-align-wrapper, .introduction-wrapper, .info-wrapper {
+  height: 100%;
+  position: absolute; }
+
+.vertical-align, .introduction-wrapper .introduction, .info-wrapper .info {
+  position: relative;
+  top: 50%;
+  -moz-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table; }
+.clearfix:after {
+  clear: both; }
 
 .animated, .introduction-wrapper .introduction ul, .info-wrapper {
   -webkit-animation-duration: 0.75s;
@@ -140,23 +165,18 @@ a {
 
 .introduction-wrapper {
   bottom: 0;
-  height: 100%;
   left: 0;
-  position: absolute;
   right: 0;
   top: 0; }
   .introduction-wrapper .introduction {
     margin: 0 60px;
     max-width: 800px;
-    padding: 40px;
-    position: relative;
-    top: 50%;
-    -moz-transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%); }
+    padding: 40px; }
     .introduction-wrapper .introduction h1 {
       color: #FFDC00;
       font-size: 48px;
+      font-weight: 700;
+      line-height: 56px;
       margin-bottom: 30px; }
     .introduction-wrapper .introduction ul {
       -webkit-animation-delay: 1s;
@@ -165,20 +185,23 @@ a {
       padding-left: 0; }
     .introduction-wrapper .introduction li {
       float: left;
+      font-weight: 500;
       margin-right: 20px; }
 
 .info-wrapper {
   background-color: #FFF;
   bottom: 0;
   left: 100%;
-  padding: 40px 50px 40px 40px;
+  overflow: scroll;
+  padding: 100px 70px 100px 40px;
   position: absolute;
   right: -10px;
   top: 0; }
   .info-wrapper:hover {
-    cursor: pointer; }
+    cursor: e-resize; }
   .info-wrapper.info-wrapper-open {
-    left: 40px; }
+    left: 80px; }
   .info-wrapper .info {
     margin: 0 auto;
-    max-width: 600px; }
+    max-width: 720px;
+    position: relative; }
