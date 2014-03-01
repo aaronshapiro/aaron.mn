@@ -16,7 +16,7 @@ body {
   color: #504C2F;
   font-family: 'futura-pt', Arial, sans-serif;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 30px; }
 
 a {
@@ -42,7 +42,6 @@ p {
   margin-bottom: 18px; }
   p.lead {
     font-size: 28px;
-    font-weight: 500;
     line-height: 37px; }
 
 small {
@@ -235,7 +234,6 @@ small {
     padding-left: 0; }
   .introduction-wrapper .introduction li {
     float: left;
-    font-weight: 500;
     margin: 0 20px 10px 0; }
     @media screen and (max-width: 400px) {
       .introduction-wrapper .introduction li {
