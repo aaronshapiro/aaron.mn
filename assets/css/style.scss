@@ -66,6 +66,13 @@ p {
     transform: translateY(-50%);
 }
 
+.hidden {
+    position: absolute;
+    right: -9999px;
+    top: -9999px;
+    visibility: hidden;
+}
+
 .clearfix {
     &:before, &:after {
         content: " ";
@@ -322,23 +329,19 @@ p {
 
 }
 
-// Bio
+// Info
 
 .info-wrapper {
     @extend .animated;
+    @extend .hidden;
     @extend .vertical-align-wrapper;
     background-color: #FFDC00;
     overflow: scroll;
     padding: 40px;
-    right: -9999px;
-    top: -9999px;
-    visibility: hidden;
+    z-index: 2;
 
-    &:hover {
-        cursor: e-resize;
-    }
-
-    &.info-wrapper-open {
+    &.info-wrapper-visible {
+        bottom: 0;
         left: 80px;
         right: 0;
         top: 0;
@@ -360,7 +363,24 @@ p {
         max-width: 830px;
         opacity: 0;
         position: relative;
-
     }
 
+}
+
+.info-mask {
+    @extend .hidden;
+    background-color: transparent;
+    z-index: 1;
+
+    &.info-mask-visible {
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 0;
+        visibility: visible;
+    }
+}
+
+.info-close:hover {
+    cursor: e-resize;
 }
