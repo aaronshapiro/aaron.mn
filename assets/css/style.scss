@@ -344,22 +344,18 @@ p {
     @extend .animated;
     @extend .vertical-align-wrapper;
     background-color: #FFDC00;
+    bottom: 0;
+    left: 80px;
     overflow: scroll;
     padding: 40px;
+    right: 0;
+    top: 0;
+    -webkit-transition: left 0.25s;
+    transition: left 0.25s;
     z-index: 2;
 
-    &.info-wrapper-visible {
-        bottom: 0;
-        left: 80px;
-        right: 0;
-        top: 0;
-        -webkit-transition: left 0.25s;
-        transition: left 0.25s;
-        visibility: visible;
-
-        @media screen and (max-width: 670px) {
-            left: 0;
-        }
+    @media screen and (max-width: 670px) {
+        left: 0;
     }
 
     .info {
@@ -383,15 +379,13 @@ p {
 
 .info-mask {
     background-color: transparent;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    visibility: visible;
     z-index: 1;
-
-    &.info-mask-visible {
-        bottom: 0;
-        left: 0;
-        right: 0;
-        top: 0;
-        visibility: visible;
-    }
 }
 
 .info-close:hover {

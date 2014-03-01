@@ -3,14 +3,15 @@ $(document).ready(function() {
     var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 
     $('.info-link').click(function() {
-        if (!$('.info-wrapper').hasClass('info-wrapper-visible')) {
+        if ($('.info-wrapper').hasClass('hidden')) {
             $('.info-wrapper')
                 .removeClass('hidden')
-                .addClass('bounce-in-right info-wrapper-visible')
+                .addClass('bounce-in-right')
                 .on(animationEnd, function() {
-                    $('.info-wrapper').off(animationEnd);
+                    $('.info-wrapper')
+                        .removeClass('bounce-in-right')
+                        .off(animationEnd);
                     $('.info-mask')
-                        .addClass('info-mask-visible')
                         .removeClass('hidden');
                 });
             $('.info-wrapper .info').addClass('fade-in').removeClass('fade-out');
@@ -19,17 +20,15 @@ $(document).ready(function() {
     });
 
     $('.info-close').click(function() {
-        if ($('.info-wrapper').hasClass('info-wrapper-visible')) {
+        if (!$('.info-wrapper').hasClass('hidden')) {
             $('.info-wrapper')
                 .addClass('bounce-out-right')
                 .on(animationEnd, function() {
                     $(this)
                         .addClass('hidden')
-                        .removeClass('info-wrapper-visible bounce-out-right')
+                        .removeClass('bounce-out-right')
                         .off(animationEnd);
-                    $('.info-mask')
-                        .addClass('hidden')
-                        .removeClass('info-mask-visible');
+                    $('.info-mask').addClass('hidden');
                 });
             $('.info-wrapper .info').addClass('fade-out').removeClass('fade-in');
         }
