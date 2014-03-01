@@ -362,7 +362,13 @@ p {
         margin: 0 auto;
         max-width: 830px;
         opacity: 0;
+        margin-bottom: 80px;
         position: relative;
+
+        p:last-child {
+            margin-bottom: 40px;
+        }
+
     }
 
 }
