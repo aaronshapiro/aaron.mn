@@ -18,9 +18,9 @@
 
 body {
     background-color: #2B303B;
-    color: #666666;
+    color: #504C2F;
     font-family: 'futura-pt', Arial, sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 30px;
     overflow: hidden;
@@ -41,7 +41,6 @@ p {
     margin-bottom: 18px;
 
     &.lead {
-        color: #333;
         font-size: 24px;
         line-height: 36px;
     }
@@ -79,6 +78,56 @@ p {
     animation-duration: 0.75s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+@-webkit-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.fadeOut {
+    -webkit-animation-name: fadeOut;
+    animation-name: fadeOut;
 }
 
 @-webkit-keyframes fadeInUp {
@@ -260,7 +309,7 @@ p {
 .info-wrapper {
     @extend .animated;
     @extend .vertical-align-wrapper;
-    background-color: #FFF;
+    background-color: #FFDC00;
     bottom: 0;
     left: 100%;
     overflow: scroll;
@@ -283,9 +332,15 @@ p {
     }
 
     .info {
+        @extend .animated;
         @extend .vertical-align;
+        -webkit-animation-delay: 0.25s;
+        animation-delay: 0.25s;
         margin: 0 auto;
-        max-width: 720px;
+        max-width: 830px;
+        opacity: 0;
         position: relative;
+
     }
+
 }
