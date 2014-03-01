@@ -306,6 +306,7 @@ p {
             @media screen and (max-width: 670px) {
                 font-size: 32px;
                 line-height: 42px;
+                margin-bottom: 20px;
             }
 
         }
@@ -323,6 +324,11 @@ p {
             float: left;
             font-weight: 500;
             margin: 0 20px 10px 0;
+
+            @media screen and (max-width: 670px) {
+                float: none;
+            }
+
         }
 
     }
