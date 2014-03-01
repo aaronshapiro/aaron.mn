@@ -27,6 +27,17 @@ a {
   a:hover {
     color: #FFF; }
 
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  margin-bottom: 30px; }
+  @media screen and (max-width: 670px) {
+    h1 {
+      font-size: 32px;
+      line-height: 42px;
+      margin-bottom: 20px; } }
+
 p {
   margin-bottom: 18px; }
   p.lead {
@@ -42,15 +53,14 @@ small {
 .vertical-align-wrapper, .introduction-wrapper, .info-wrapper {
   height: 100%;
   position: absolute; }
-
-@media screen and (min-width: 670px) {
-  .vertical-align, .introduction-wrapper .introduction, .info-wrapper .info {
-    max-height: 100%;
-    position: relative;
-    top: 50%;
-    -moz-transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%); } }
+  @media screen and (min-width: 670px) {
+    .vertical-align-wrapper .vertical-align, .introduction-wrapper .vertical-align, .info-wrapper .vertical-align, .introduction-wrapper .introduction, .info-wrapper .info {
+      max-height: 100%;
+      position: relative;
+      top: 50%;
+      -moz-transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%); } }
 
 .hidden {
   display: none; }
@@ -208,51 +218,35 @@ small {
   -webkit-animation-name: bounce-out;
   animation-name: bounce-out; }
 
-.introduction-wrapper {
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 0; }
-  .introduction-wrapper .introduction {
-    margin: 0 80px;
-    max-width: 800px;
-    padding: 20px; }
-    @media screen and (max-width: 670px) {
-      .introduction-wrapper .introduction {
-        max-width: 500px;
-        margin: 0 auto; } }
-    .introduction-wrapper .introduction h1 {
-      color: #FFDC00;
-      font-size: 48px;
-      font-weight: 700;
-      line-height: 56px;
-      margin-bottom: 30px; }
-      @media screen and (max-width: 670px) {
-        .introduction-wrapper .introduction h1 {
-          font-size: 32px;
-          line-height: 42px;
-          margin-bottom: 20px; } }
-    .introduction-wrapper .introduction ul {
-      -webkit-animation-delay: 1s;
-      animation-delay: 1s;
-      list-style: none;
-      padding-left: 0; }
-    .introduction-wrapper .introduction li {
-      float: left;
-      font-weight: 500;
-      margin: 0 20px 10px 0; }
-      @media screen and (max-width: 400px) {
-        .introduction-wrapper .introduction li {
-          float: none; } }
+.introduction-wrapper .introduction {
+  margin: 0 80px;
+  max-width: 800px;
+  padding: 20px; }
+  @media screen and (max-width: 670px) {
+    .introduction-wrapper .introduction {
+      max-width: 500px;
+      margin: 0 auto; } }
+  .introduction-wrapper .introduction h1 {
+    color: #FFDC00; }
+  .introduction-wrapper .introduction ul {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+    list-style: none;
+    padding-left: 0; }
+  .introduction-wrapper .introduction li {
+    float: left;
+    font-weight: 500;
+    margin: 0 20px 10px 0; }
+    @media screen and (max-width: 400px) {
+      .introduction-wrapper .introduction li {
+        float: none; } }
 
 .info-wrapper {
   background-color: #FFDC00;
-  bottom: 0;
   left: 80px;
   overflow: scroll;
   padding: 40px;
   right: 0;
-  top: 0;
   -moz-transition: left 0.25s;
   -webkit-transition: left 0.25s;
   transition: left 0.25s;
@@ -265,8 +259,7 @@ small {
     animation-delay: 0.8s;
     margin: 0 auto;
     max-width: 830px;
-    opacity: 0;
-    position: relative; }
+    opacity: 0; }
     .info-wrapper .info a {
       border-bottom: 2px solid #504C2F;
       color: #504C2F;
