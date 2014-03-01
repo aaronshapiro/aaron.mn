@@ -40,6 +40,7 @@ p {
   position: absolute; }
 
 .vertical-align, .introduction-wrapper .introduction, .info-wrapper .info {
+  max-height: 100%;
   position: relative;
   top: 50%;
   -moz-transform: translateY(-50%);
@@ -230,7 +231,7 @@ p {
     .introduction-wrapper .introduction li {
       float: left;
       font-weight: 500;
-      margin-right: 20px; }
+      margin: 0 20px 10px 0; }
 
 .info-wrapper {
   background-color: #FFDC00;
@@ -244,7 +245,12 @@ p {
   .info-wrapper:hover {
     cursor: e-resize; }
   .info-wrapper.info-wrapper-open {
-    left: 80px; }
+    left: 80px;
+    -webkit-transition: left 0.25s;
+    transition: left 0.25s; }
+    @media screen and (max-width: 670px) {
+      .info-wrapper.info-wrapper-open {
+        left: 0; } }
   .info-wrapper .info {
     -webkit-animation-delay: 0.8s;
     animation-delay: 0.8s;
