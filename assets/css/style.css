@@ -237,8 +237,8 @@ p {
   .info-wrapper.info-wrapper-open {
     left: 80px; }
   .info-wrapper .info {
-    -webkit-animation-delay: 0.25s;
-    animation-delay: 0.25s;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
     margin: 0 auto;
     max-width: 830px;
     opacity: 0;
