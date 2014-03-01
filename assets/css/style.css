@@ -43,19 +43,24 @@ p {
   height: 100%;
   position: absolute; }
 
-.vertical-align, .introduction-wrapper .introduction, .info-wrapper .info {
-  max-height: 100%;
-  position: relative;
-  top: 50%;
-  -moz-transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%); }
+@media screen and (min-width: 670px) {
+  .vertical-align, .introduction-wrapper .introduction, .info-wrapper .info {
+    max-height: 100%;
+    position: relative;
+    top: 50%;
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%); } }
 
-.hidden, .info-wrapper, .info-mask {
+.hidden {
   position: absolute;
-  right: -9999px;
-  top: -9999px;
-  visibility: hidden; }
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0; }
 
 .clearfix:before, .clearfix:after {
   content: " ";

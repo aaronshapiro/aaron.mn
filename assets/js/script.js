@@ -5,12 +5,13 @@ $(document).ready(function() {
     $('.info-link').click(function() {
         if (!$('.info-wrapper').hasClass('info-wrapper-visible')) {
             $('.info-wrapper')
+                .removeClass('hidden')
                 .addClass('bounce-in-right info-wrapper-visible')
                 .on(animationEnd, function() {
-                    $('.info-wrapper')
-                        .removeClass('bounce-in-right')
-                        .off(animationEnd);
-                    $('.info-mask').addClass('info-mask-visible');
+                    $('.info-wrapper').off(animationEnd);
+                    $('.info-mask')
+                        .addClass('info-mask-visible')
+                        .removeClass('hidden');
                 });
             $('.info-wrapper .info').addClass('fade-in').removeClass('fade-out');
         }
@@ -23,9 +24,12 @@ $(document).ready(function() {
                 .addClass('bounce-out-right')
                 .on(animationEnd, function() {
                     $(this)
+                        .addClass('hidden')
                         .removeClass('info-wrapper-visible bounce-out-right')
                         .off(animationEnd);
-                    $('.info-mask').removeClass('info-mask-visible');
+                    $('.info-mask')
+                        .addClass('hidden')
+                        .removeClass('info-mask-visible');
                 });
             $('.info-wrapper .info').addClass('fade-out').removeClass('fade-in');
         }
