@@ -42,7 +42,7 @@ p {
   margin-bottom: 18px; }
   p.lead {
     font-size: 28px;
-    line-height: 37px; }
+    line-height: 40px; }
 
 small {
   font-size: 13px;
@@ -257,7 +257,7 @@ small {
     animation-delay: 0.8s;
     border-top: 2px solid #504C2F;
     margin: 0 auto;
-    max-width: 830px;
+    max-width: 1000px;
     opacity: 0;
     padding-top: 40px; }
     .info-wrapper .info a {
