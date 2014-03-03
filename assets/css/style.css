@@ -259,7 +259,7 @@ small {
     margin: 0 auto;
     max-width: 1000px;
     opacity: 0;
-    padding-top: 40px; }
+    padding-top: 20px; }
     .info-wrapper .info a {
       border-bottom: 2px solid #504C2F;
       color: #504C2F;
@@ -275,7 +275,7 @@ small {
         padding-bottom: 3px; }
     @media screen and (min-width: 670px) {
       .info-wrapper .info {
-        padding-top: 20px; }
+        padding-top: 40px; }
         .info-wrapper .info .column {
           float: left;
           padding: 0 20px;
