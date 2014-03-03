@@ -198,13 +198,11 @@ small {
 
 @-webkit-keyframes bounce-in {
     0% {
-        opacity: 0;
         -webkit-transform: translateX(2000px);
         transform: translateX(2000px);
     }
 
     60% {
-        opacity: 1;
         -webkit-transform: translateX(-10px);
         transform: translateX(-10px);
     }
