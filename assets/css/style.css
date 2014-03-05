@@ -247,6 +247,10 @@ small {
   -webkit-transition: left 0.25s;
   transition: left 0.25s;
   z-index: 2; }
+  .info-wrapper ::selection {
+    background: #F5DD47; }
+  .info-wrapper ::-moz-selection {
+    background: #F5DD47; }
   @media screen and (max-width: 670px) {
     .info-wrapper {
       right: 0; } }

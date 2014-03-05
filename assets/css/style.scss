@@ -349,6 +349,14 @@ small {
     transition: left 0.25s;
     z-index: 2;
 
+    ::selection {
+        background: #F5DD47;
+    }
+
+    ::-moz-selection {
+        background: #F5DD47;
+    }
+
     @media screen and (max-width: 670px) {
         right: 0;
     }
