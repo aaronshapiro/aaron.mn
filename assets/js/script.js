@@ -31,5 +31,9 @@ $(document).ready(function() {
         return false;
     });
 
+    $('.info-close a').click(function() {
+        event.stopPropagation();
+    })
+
 });
 
