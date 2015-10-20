@@ -237,11 +237,33 @@
 
             <p>When opening Cover 1.0 in a restaurant, diners would see a list of everyone checked in. This meant it was easy to join a friend to split the check, but this approach was unscalable &ndash; especially if Cover were to expand to bars where dozens of diners could be checked in at once. Showing everyone's names and photos was also a common privacy&nbsp;concern.</p>
 
-            <p>Our solution was one of the biggest engineering challenges of the redesign. We removed the list of checked in diners altogether. Instead, we relied on a combination of diners' address books and dining history to suggest joining a friend immediately after checking in. We affectionately referred to this prompt as the "magic modal," and for most diners, this was the only action they needed to&nbsp;take.</p>
+            <p>Our solution was one of the biggest engineering challenges of the redesign.</p>
+
+            <p>We relied on iBeacons placed near the entrance of each restaurant to determine if the diner was inside. If they were, the first screen they would see when opening Cover 2.0 would suggest they check in.</p>
+
+            <p>We also removed the list of checked in diners altogether. Instead, we relied on a combination of diners' address books and dining history to suggest joining a friend immediately after checking in. We affectionately referred to this prompt as the "magic modal," and for most diners, this was the only action they needed to&nbsp;take.</p>
 
             <div class="clearfix">
 
-                <div class="image image-iphone has-border has-scrollable-content has-margin float-left float-none-sm">
+                <div class="image image-iphone has-border has-margin float-left float-none-sm">
+                    <img class="image-fixed-top" src="../assets/images/iphone-status-light.png">
+                    <img src="../assets/images/cover/screenshot-dine-here-body.png">
+                </div>
+
+                <div class="image image-iphone has-border has-margin float-right float-none-sm">
+                    <img class="image-fixed-top" src="../assets/images/iphone-status-light.png">
+                    <img src="../assets/images/cover/screenshot-magic-modal-body.png">
+                </div>
+
+            </div>
+
+            <p class="text-caption">Checking into a restaurant in&nbsp;Cover&nbsp;2.0</p>
+
+            <p>If a diner was too far from an iBeacon or if they wanted to check into the restaurant before arriving, they could still do so from the restaurant's detail&nbsp;screen.
+
+            <div class="float-right float-none-sm has-margin">
+
+                <div class="image image-iphone has-border has-scrollable-content">
                     <img class="image-fixed-top has-border" src="../assets/images/cover/screenshot-restaurant-top.png">
                     <img class="image-fixed-top" src="../assets/images/iphone-status-dark.png">
                     <div class="image-scrollable-content">
@@ -250,16 +272,13 @@
                     <img class="image-fixed-bottom has-border" src="../assets/images/cover/screenshot-restaurant-bottom.png">
                 </div>
 
-                <div class="image image-iphone has-margin has-border float-right float-none-sm">
-                    <img class="image-fixed-top" src="../assets/images/iphone-status-dark.png">
-                    <img src="../assets/images/cover/screenshot-magic-modal-body.png">
-                </div>
+                <p class="text-caption">Checking in from a restaurant's detail screen</p>
 
             </div>
 
-            <p class="text-caption">Checking into a restaurant in&nbsp;Cover&nbsp;2.0</p>
-
             <p>The only way for us to validate this new approach was to try it in one of our restaurants. Since Kim and I were regularly checking in with the team's engineers, they were able to create native prototypes before we dedicated time to polishing them. We started by sharing these prototypes internally, but eventually invited diners in restaurants &ndash; most of whom hadn't heard of Cover &ndash; to try them as&nbsp;well.</p>
+
+            <p>Checking into a restaurant was confusing in early sessions, which we solved by adjusting language on the button. Labeling the action "Pay at Charlie Bird" implied the payment would be processed immediately. People were pressing this button at the end of the meal rather than at the beginning, which we addressed by changing the language to "Check In at Charlie&nbsp;Bird".</p>
 
             <div class="float-right float-none-sm has-margin">
 
@@ -270,8 +289,6 @@
                 <p class="text-caption">Iterating on the check in button</p>
 
             </div>
-
-            <p>Checking into a restaurant was confusing in early sessions, which we solved by adjusting language on the button. Labeling the action "Pay at Charlie Bird" implied the payment would be processed immediately. People were pressing this button at the end of the meal rather than at the beginning, which we addressed by changing the language to "Check In at Charlie&nbsp;Bird".</p>
 
             <h3>Using Cover During a&nbsp;Meal</h3>
 
@@ -402,7 +419,7 @@
 
             <div class="float-right float-none-sm has-margin">
 
-                <div class="image has-border has-margin image-iphone">
+                <div class="image has-border image-iphone">
                     <video autoplay loop src="../assets/images/cover/video-map.mp4"></video>
                 </div>
 
