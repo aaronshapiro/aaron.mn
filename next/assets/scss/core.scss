@@ -1,0 +1,283 @@
+// Variables
+
+$breakpoint-sm: 0;
+$breakpoint-md: 720px;
+$breakpoint-lg: 1200px;
+
+// Reset
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+img,
+video {
+    max-width: 100%
+}
+
+// Animations
+
+@keyframes fade-in {
+
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+@keyframes fade-in-up {
+
+    0% {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+@keyframes carousel {
+
+    0% {
+        transform: translateX(0);
+    }
+    
+    100% {
+        transform: translateX(-50%);
+    }
+
+}
+
+// Typogaphy
+
+body {
+    font-family: "Karla", sans-serif;
+    font-size: 16px;
+    line-height: 2;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0 0 24px;
+}
+
+p {
+    max-width: 560px;
+}
+
+a {
+    color: #FF4136;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+}
+
+.text-larger {
+    font-size: 1.2em;
+    max-width: 100%;
+}
+
+.text-caption {
+    color: rgba(#000, 0.6);
+    font-size: 0.8em;
+    max-width: 100%;
+}
+
+// Layout
+
+.container {
+    padding: 0 32px;
+    margin: 0 auto;
+    max-width: 768px;
+    width: 100%;
+}
+
+.clearfix {
+
+    &:before,
+    &:after {
+        content: " ";
+        display: table;
+    }
+
+    &:after {
+        clear: both;
+    }
+
+}
+
+.float-left {
+    float: left;
+    margin-right: 40px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 80px;
+}
+
+.float-none-sm {
+        
+    @media screen and (max-width: $breakpoint-md) {
+        float: none;
+        margin: 0;
+    }
+
+}
+
+// Presentation
+
+.project-hero {
+    color: #FFF;
+    margin-bottom: 80px;
+    padding: 160px 0;
+    position: relative;
+
+    &.project-hero-cover {
+        background-color: #6C19DB;
+    }
+
+}
+
+.project-hero-text {
+    animation-duration: 0.4s;
+    animation-fill-mode: both;
+    animation-name: fade-in-up;
+    margin: 0;
+}
+
+.project-hero-background {
+    animation-delay: 1s;
+    animation-duration: 0.4s;
+    animation-fill-mode: both;
+    animation-name: fade-in;
+    background-size: cover;
+    background-position: 0 50%;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    &.project-hero-background-cover {
+        background-image: url(../images/cover/project-hero.jpg);
+    }
+
+}
+
+.project-hero-text-primary {
+    animation-delay: 2s;
+}
+
+.project-hero-text-secondary {
+    animation-delay: 3s;
+}
+
+.carousel {
+    border-bottom: 1px solid rgba(#000, 0.1);
+    border-top: 1px solid rgba(#000, 0.1);
+    margin: 32px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-images {
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-name: carousel;
+    animation-timing-function: linear;
+    width: 4050px;
+}
+
+.carousel-image {
+    float: left;
+    max-width: none;
+    width: 50%;
+}
+
+.image {
+    display: block;
+    margin: 0 auto 32px;
+    position: relative;
+
+    &.has-border {
+        border: 1px solid rgba(#000, 0.1);
+    }
+
+    &.has-margin {
+        margin: 32px auto;
+    }
+
+    &.has-scrollable-content {
+        max-height: 590px;
+        overflow: hidden;
+    }
+
+}
+
+.image-scrollable-content {
+    height: 100%;
+    overflow: scroll;
+}
+
+.image-iphone {
+    width: 332px;
+
+    img {
+        width: 100%;
+    }
+
+}
+
+.image-fixed-top {
+    left: 0;
+    position: absolute;
+    top: 0;
+
+    &.has-border {
+        box-shadow: 0 1px 0 rgba(#000, 0.1);
+    }
+
+}
+
+.image-fixed-bottom {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+
+    &.has-border {
+        box-shadow: 0 -1px 0 rgba(#000, 0.1);
+    }
+
+}
+
+.image-full {
+    margin: 32px 0;
+
+    &.has-padding {
+        padding: 40px;
+    }
+
+    &.image-full-origami {
+        background-color: #323233;
+        background-image: url(../images/cover/origami-background.png);
+        background-position: 50% 50%;
+        background-size: 50px 50px;
+    }
+
+}
