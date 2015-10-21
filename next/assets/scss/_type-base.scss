@@ -1,0 +1,24 @@
+@import url(https://fonts.googleapis.com/css?family=Karla:400,700);
+
+body {
+    color: $color-body;
+    font-family: $font-body;
+    font-size: 16px;
+    line-height: 2;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-weight: normal;
+    margin: 16px 0;
+}
+
+p {
+    max-width: 560px;
+}
+
+a {
+    border-bottom: 1px solid $color-body;
+    color: $color-body;
+    padding-bottom: 4px;
+    text-decoration: none;
+}

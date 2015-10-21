@@ -1,0 +1,38 @@
+.animated {
+    animation-duration: 0.4s;
+    animation-fill-mode: both;
+
+    &.has-delay-1 {
+        animation-delay: 0.4s;
+    }
+
+    &.has-delay-2 {
+        animation-delay: 0.8s;
+    }
+
+    &.has-delay-3 {
+        animation-delay: 1.2s;
+    }
+
+    &.has-delay-4 {
+        animation-delay: 1.6s;
+    }
+
+    &.has-delay-5 {
+        animation-delay: 2.0s;
+    }
+
+    &.has-delay-6 {
+        animation-delay: 2.4s;
+    }
+
+
+}
+
+.animated-fade-in-up {
+    animation-name: fade-in-up;
+}
+
+.animated-fade-in {
+    animation-name: fade-in;
+}

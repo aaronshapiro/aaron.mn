@@ -1,0 +1,117 @@
+body {
+    background-color: #FFF;
+    color: #222;
+}
+
+.work-hero {
+    color: #FFF;
+    margin-bottom: 80px;
+    padding: 160px 0;
+    position: relative;
+
+    &.work-hero-cover {
+        background-color: #6C19DB;
+        background-image: url(../images/cover/project-hero.jpg);
+        background-size: cover;
+        background-position: 0 50%;
+    }
+
+}
+
+.work-hero-text {
+    animation-duration: 0.4s;
+    animation-fill-mode: both;
+    animation-name: fade-in-up;
+    margin: 0;
+}
+
+.image {
+    display: block;
+    margin: 0 auto 32px;
+    position: relative;
+
+    &.has-border {
+        border: 1px solid rgba(#000, 0.1);
+    }
+
+    &.has-margin {
+        margin: 32px auto;
+    }
+
+    &.has-scrollable-content {
+        max-height: 590px;
+        overflow: hidden;
+    }
+
+}
+
+.image-scrollable-content {
+    height: 100%;
+    overflow: scroll;
+}
+
+.image-iphone {
+    width: 332px;
+
+    img {
+        width: 100%;
+    }
+
+}
+
+.image-fixed-top {
+    left: 0;
+    position: absolute;
+    top: 0;
+
+    &.has-border {
+        box-shadow: 0 1px 0 rgba(#000, 0.1);
+    }
+
+}
+
+.image-fixed-bottom {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+
+    &.has-border {
+        box-shadow: 0 -1px 0 rgba(#000, 0.1);
+    }
+
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-images {
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-name: carousel;
+    animation-timing-function: linear;
+    width: 4050px;
+}
+
+.carousel-image {
+    float: left;
+    max-width: none;
+    width: 50%;
+}
+
+.image-full {
+    margin: 32px 0;
+
+    &.has-padding {
+        padding: 40px;
+    }
+
+    &.image-full-origami {
+        background-color: #323233;
+        background-image: url(../images/cover/origami-background.png);
+        background-position: 50% 50%;
+        background-size: 50px 50px;
+    }
+
+}
