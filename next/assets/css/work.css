@@ -39,15 +39,11 @@ body {
   left: 0;
   position: absolute;
   top: 0; }
-  .image-fixed-top.has-border {
-    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1); }
 
 .image-fixed-bottom {
   bottom: 0;
   left: 0;
   position: absolute; }
-  .image-fixed-bottom.has-border {
-    box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1); }
 
 .carousel {
   position: relative;
