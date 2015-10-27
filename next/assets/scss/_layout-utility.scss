@@ -18,10 +18,30 @@
 .float-left  { float: left; }
 .float-right { float: right; }
 
+.overflow-hidden { overflow: hidden; }
+.overflow-scroll { overflow: scroll; }
+
+@media screen and (max-width: $breakpoint-md - 1) {
+
+    .hide-sm { display: none; }
+
+    .show-sm { display: block; }
+    .show-md { display: none; }
+    .show-lg { display: none; } 
+
+}
+
 @media screen and (min-width: $breakpoint-md) {
 
     .float-left-md  { float: left; }
     .float-right-md { float: right; }
+
+    .hide-sm { display: block; }
+    .hide-md { display: none; }
+
+    .show-sm { display: none; }
+    .show-md { display: block; }
+    .show-lg { display: none; }  
 
 }
 
@@ -30,7 +50,12 @@
     .float-left-lg  { float: left; }
     .float-right-lg { float: right; }
 
-}
+    .hide-sm { display: block; }
+    .hide-md { display: block; }
+    .hide-lg { display: none; }
+    
+    .show-sm { display: none; }
+    .show-md { display: none; }
+    .show-lg { display: block; }  
 
-.overflow-hidden { overflow: hidden; }
-.overflow-scroll { overflow: scroll; }
+}
