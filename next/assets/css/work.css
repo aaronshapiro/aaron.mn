@@ -1,49 +1,18 @@
-body {
-  background-color: #FFF;
-  color: #222; }
+.background-origami {
+  background-color: #323233;
+  background-image: url(../images/cover/origami-background.png);
+  background-position: 50% 50%;
+  background-size: 50px 50px; }
 
-.work-hero {
-  color: #FFF;
-  margin-bottom: 80px;
-  padding: 160px 0;
-  position: relative; }
-  .work-hero.work-hero-cover {
-    background-color: #6C19DB;
-    background-image: url(../images/cover/project-hero.jpg);
-    background-size: cover;
-    background-position: 0 50%; }
+.hero {
+  background-size: cover;
+  background-position: center center;
+  padding: 120px 0; }
 
-.work-hero-text {
-  animation-duration: 0.4s;
-  animation-fill-mode: both;
-  animation-name: fade-in-up;
-  margin: 0; }
-
-.image {
-  display: block;
-  position: relative; }
-  .image.has-scrollable-content {
-    max-height: 590px;
-    overflow: hidden; }
-
-.image-scrollable-content {
-  height: 100%;
-  overflow: scroll; }
-
-.image-iphone {
-  width: 332px; }
-  .image-iphone img {
-    width: 100%; }
-
-.image-fixed-top {
-  left: 0;
-  position: absolute;
-  top: 0; }
-
-.image-fixed-bottom {
-  bottom: 0;
-  left: 0;
-  position: absolute; }
+.hero-cover {
+  background-color: #6C19DB;
+  background-image: url(../images/cover/project-hero.jpg);
+  color: #FFF; }
 
 .carousel {
   position: relative;
@@ -61,10 +30,38 @@ body {
   max-width: none;
   width: 50%; }
 
-.background-origami {
-  background-color: #323233;
-  background-image: url(../images/cover/origami-background.png);
-  background-position: 50% 50%;
-  background-size: 50px 50px; }
+.constrain-height {
+  height: 580px; }
+
+.iphone {
+  overflow: hidden;
+  position: relative; }
+  .iphone:before {
+    display: block;
+    content: "";
+    padding-top: 177.866%;
+    width: 100%; }
+  .iphone img {
+    width: 100%; }
+
+.iphone-top {
+  left: 0;
+  position: absolute;
+  top: 0;
+  z-index: 2; }
+
+.iphone-body {
+  bottom: 0;
+  left: 0;
+  overflow: scroll;
+  position: absolute;
+  right: 0;
+  top: 0; }
+
+.iphone-bottom {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: 2; }
 
 /*# sourceMappingURL=work.css.map */

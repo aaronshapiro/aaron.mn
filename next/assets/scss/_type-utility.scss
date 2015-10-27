@@ -1,7 +1,15 @@
 .line-height-display {
-	line-height: 1.5;
+    line-height: 1.5;
 }
 
 .text-smaller {
     font-size: 0.8em;
+}
+
+.unselectable {
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    cursor: default;
+    user-select: none;
 }

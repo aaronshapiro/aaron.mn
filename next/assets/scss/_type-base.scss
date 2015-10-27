@@ -1,19 +1,33 @@
-@import url(https://fonts.googleapis.com/css?family=Karla:400,700);
-
 body {
     color: $color-body;
-    font-family: $font-body;
+    font-family: $font-family-body;
     font-size: 16px;
+    font-weight: 400;
     line-height: 2;
 }
 
 h1, h2, h3, h4, h5, h6, p {
-    margin: 16px 0;
+    margin: 24px 0;
 }
 
-p {
-    max-width: 560px;
+h1, h2, h3 {
+    font-family: $font-family-display;
+    font-weight: 600;
 }
+
+h4, h5, h6 {
+    font-family: $font-family-body;
+    font-weight: 600;
+}
+
+h1 { font-size: 40px; }
+h2 { font-size: 32px; }
+h3 { font-size: 20px; }
+h4 { font-size: 16px; }
+h5 { font-size: 13px; }
+h6 { font-size: 10px; }
+
+p { max-width: 580px; }
 
 a {
     border-bottom: 1px solid $color-body;

@@ -12,6 +12,9 @@
 
 }
 
+.fit-height { min-height: 100vh; }
+.fit-width  { width: 100%; }
+
 .float-left  { float: left; }
 .float-right { float: right; }
 
@@ -29,6 +32,5 @@
 
 }
 
-.height-vh-100 {
-    min-height: 100vh;
-}
+.overflow-hidden { overflow: hidden; }
+.overflow-scroll { overflow: scroll; }
