@@ -88,6 +88,219 @@ a {
 .flex-last {
   order: 99999; }
 
+.container {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 0 32px;
+  width: 100%; }
+
+.column-1 {
+  width: 8.333%; }
+
+.column-2 {
+  width: 16.666%; }
+
+.column-3 {
+  width: 25%; }
+
+.column-4 {
+  width: 33.333%; }
+
+.column-5 {
+  width: 41.666%; }
+
+.column-6 {
+  width: 50%; }
+
+.column-7 {
+  width: 58.333%; }
+
+.column-8 {
+  width: 66.666%; }
+
+.column-9 {
+  width: 75%; }
+
+.column-10 {
+  width: 83.333%; }
+
+.column-11 {
+  width: 91.666%; }
+
+.column-12 {
+  width: 100%; }
+
+.column-offset-1 {
+  margin-left: 8.333%; }
+
+.column-offset-2 {
+  margin-left: 16.666%; }
+
+.column-offset-3 {
+  margin-left: 25%; }
+
+.column-offset-4 {
+  margin-left: 33.333%; }
+
+.column-offset-5 {
+  margin-left: 41.666%; }
+
+.column-offset-6 {
+  margin-left: 50%; }
+
+.column-offset-7 {
+  margin-left: 58.333%; }
+
+.column-offset-8 {
+  margin-left: 66.666%; }
+
+.column-offset-9 {
+  margin-left: 75%; }
+
+.column-offset-10 {
+  margin-left: 83.333%; }
+
+.column-offset-11 {
+  margin-left: 91.666%; }
+
+@media screen and (min-width: 720px) {
+  .column-md-1 {
+    width: 8.333%; }
+
+  .column-md-2 {
+    width: 16.666%; }
+
+  .column-md-3 {
+    width: 25%; }
+
+  .column-md-4 {
+    width: 33.333%; }
+
+  .column-md-5 {
+    width: 41.666%; }
+
+  .column-md-6 {
+    width: 50%; }
+
+  .column-md-7 {
+    width: 58.333%; }
+
+  .column-md-8 {
+    width: 66.666%; }
+
+  .column-md-9 {
+    width: 75%; }
+
+  .column-md-10 {
+    width: 83.333%; }
+
+  .column-md-11 {
+    width: 91.666%; }
+
+  .column-md-12 {
+    width: 100%; }
+
+  .column-offset-md-1 {
+    margin-left: 8.333%; }
+
+  .column-offset-md-2 {
+    margin-left: 16.666%; }
+
+  .column-offset-md-3 {
+    margin-left: 25%; }
+
+  .column-offset-md-4 {
+    margin-left: 33.333%; }
+
+  .column-offset-md-5 {
+    margin-left: 41.666%; }
+
+  .column-offset-md-6 {
+    margin-left: 50%; }
+
+  .column-offset-md-7 {
+    margin-left: 58.333%; }
+
+  .column-offset-md-8 {
+    margin-left: 66.666%; }
+
+  .column-offset-md-9 {
+    margin-left: 75%; }
+
+  .column-offset-md-10 {
+    margin-left: 83.333%; }
+
+  .column-offset-md-11 {
+    margin-left: 91.666%; } }
+@media screen and (min-width: 1200px) {
+  .column-lg-1 {
+    width: 8.333%; }
+
+  .column-lg-2 {
+    width: 16.666%; }
+
+  .column-lg-3 {
+    width: 25%; }
+
+  .column-lg-4 {
+    width: 33.333%; }
+
+  .column-lg-5 {
+    width: 41.666%; }
+
+  .column-lg-6 {
+    width: 50%; }
+
+  .column-lg-7 {
+    width: 58.333%; }
+
+  .column-lg-8 {
+    width: 66.666%; }
+
+  .column-lg-9 {
+    width: 75%; }
+
+  .column-lg-10 {
+    width: 83.333%; }
+
+  .column-lg-11 {
+    width: 91.666%; }
+
+  .column-lg-12 {
+    width: 100%; }
+
+  .column-offset-lg-1 {
+    margin-left: 8.333%; }
+
+  .column-offset-lg-2 {
+    margin-left: 16.666%; }
+
+  .column-offset-lg-3 {
+    margin-left: 25%; }
+
+  .column-offset-lg-4 {
+    margin-left: 33.333%; }
+
+  .column-offset-lg-5 {
+    margin-left: 41.666%; }
+
+  .column-offset-lg-6 {
+    margin-left: 50%; }
+
+  .column-offset-lg-7 {
+    margin-left: 58.333%; }
+
+  .column-offset-lg-8 {
+    margin-left: 66.666%; }
+
+  .column-offset-lg-9 {
+    margin-left: 75%; }
+
+  .column-offset-lg-10 {
+    margin-left: 83.333%; }
+
+  .column-offset-lg-11 {
+    margin-left: 91.666%; } }
 .animated {
   animation-duration: 0.4s;
   animation-fill-mode: both; }
@@ -136,25 +349,24 @@ a {
 .clearfix:after {
   clear: both; }
 
-.container {
-  padding: 0 32px;
-  margin: 0 auto;
-  max-width: 768px;
-  width: 100%; }
-
 .float-left {
-  float: left;
-  margin-right: 80px; }
+  float: left; }
 
 .float-right {
-  float: right;
-  margin-left: 80px; }
+  float: right; }
 
-@media screen and (max-width: 720px) {
-  .float-none-sm {
-    float: none;
-    margin: 0; } }
+@media screen and (min-width: 720px) {
+  .float-left-md {
+    float: left; }
 
+  .float-right-md {
+    float: right; } }
+@media screen and (min-width: 1200px) {
+  .float-left-lg {
+    float: left; }
+
+  .float-right-lg {
+    float: right; } }
 .height-vh-100 {
   min-height: 100vh; }
 

@@ -12,29 +12,20 @@
 
 }
 
-.container {
-    padding: 0 32px;
-    margin: 0 auto;
-    max-width: 768px;
-    width: 100%;
+.float-left  { float: left; }
+.float-right { float: right; }
+
+@media screen and (min-width: $breakpoint-md) {
+
+    .float-left-md  { float: left; }
+    .float-right-md { float: right; }
+
 }
 
-.float-left {
-    float: left;
-    margin-right: 80px;
-}
+@media screen and (min-width: $breakpoint-lg) {
 
-.float-right {
-    float: right;
-    margin-left: 80px;
-}
-
-.float-none-sm {
-        
-    @media screen and (max-width: $breakpoint-md) {
-        float: none;
-        margin: 0;
-    }
+    .float-left-lg  { float: left; }
+    .float-right-lg { float: right; }
 
 }
 

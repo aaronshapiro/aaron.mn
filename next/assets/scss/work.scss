@@ -27,16 +27,7 @@ body {
 
 .image {
     display: block;
-    margin: 0 auto 32px;
     position: relative;
-
-    &.has-border {
-        border: 1px solid rgba(#000, 0.1);
-    }
-
-    &.has-margin {
-        margin: 32px auto;
-    }
 
     &.has-scrollable-content {
         max-height: 590px;
@@ -100,18 +91,9 @@ body {
     width: 50%;
 }
 
-.image-full {
-    margin: 32px 0;
-
-    &.has-padding {
-        padding: 40px;
-    }
-
-    &.image-full-origami {
-        background-color: #323233;
-        background-image: url(../images/cover/origami-background.png);
-        background-position: 50% 50%;
-        background-size: 50px 50px;
-    }
-
+.background-origami {
+    background-color: #323233;
+    background-image: url(../images/cover/origami-background.png);
+    background-position: 50% 50%;
+    background-size: 50px 50px;
 }

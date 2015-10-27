@@ -21,12 +21,7 @@ body {
 
 .image {
   display: block;
-  margin: 0 auto 32px;
   position: relative; }
-  .image.has-border {
-    border: 1px solid rgba(0, 0, 0, 0.1); }
-  .image.has-margin {
-    margin: 32px auto; }
   .image.has-scrollable-content {
     max-height: 590px;
     overflow: hidden; }
@@ -70,14 +65,10 @@ body {
   max-width: none;
   width: 50%; }
 
-.image-full {
-  margin: 32px 0; }
-  .image-full.has-padding {
-    padding: 40px; }
-  .image-full.image-full-origami {
-    background-color: #323233;
-    background-image: url(../images/cover/origami-background.png);
-    background-position: 50% 50%;
-    background-size: 50px 50px; }
+.background-origami {
+  background-color: #323233;
+  background-image: url(../images/cover/origami-background.png);
+  background-position: 50% 50%;
+  background-size: 50px 50px; }
 
 /*# sourceMappingURL=work.css.map */
