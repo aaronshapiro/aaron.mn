@@ -27,6 +27,11 @@ video {
     transform: translateX(0); }
   100% {
     transform: translateX(-50%); } }
+hr {
+  background-color: #000;
+  border: none;
+  height: 1px; }
+
 body {
   color: #222;
   font-family: "proxima-nova", sans-serif;
