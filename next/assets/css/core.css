@@ -28,9 +28,6 @@ video {
   100% {
     transform: translateX(-50%); } }
 body {
-  background-color: #FFF; }
-
-body {
   color: #222;
   font-family: "proxima-nova", sans-serif;
   font-size: 16px;
@@ -68,10 +65,10 @@ h6 {
 
 @media screen and (min-width: 520px) {
   h1 {
-    font-size: 40px; }
+    font-size: 56px; }
 
   h2 {
-    font-size: 32px; }
+    font-size: 34px; }
 
   h3 {
     font-size: 20px; } }
@@ -409,6 +406,60 @@ a {
 .overflow-scroll {
   overflow: scroll; }
 
+.position-absolute {
+  position: absolute; }
+
+.position-relative {
+  position: relative; }
+
+.nudge-bottom-1 {
+  bottom: 1px; }
+
+.nudge-bottom-2 {
+  bottom: 2px; }
+
+.nudge-bottom-3 {
+  bottom: 3px; }
+
+.nudge-bottom-4 {
+  bottom: 4px; }
+
+.nudge-bottom-5 {
+  bottom: 5px; }
+
+.nudge-bottom-6 {
+  bottom: 6px; }
+
+.nudge-bottom-7 {
+  bottom: 7px; }
+
+.nudge-bottom-8 {
+  bottom: 8px; }
+
+.nudge-top-1 {
+  top: 1px; }
+
+.nudge-top-2 {
+  top: 2px; }
+
+.nudge-top-3 {
+  top: 3px; }
+
+.nudge-top-4 {
+  top: 4px; }
+
+.nudge-top-5 {
+  top: 5px; }
+
+.nudge-top-6 {
+  top: 6px; }
+
+.nudge-top-7 {
+  top: 7px; }
+
+.nudge-top-8 {
+  top: 8px; }
+
 @media screen and (max-width: 519px) {
   .hide-sm {
     display: none; }
@@ -469,8 +520,20 @@ a {
 .line-height-display {
   line-height: 1.5; }
 
+.text-align-left {
+  text-align: left; }
+
+.text-align-center {
+  text-align: center; }
+
+.text-align-right {
+  text-align: right; }
+
+.text-larger {
+  font-size: 120%; }
+
 .text-smaller {
-  font-size: 0.8em; }
+  font-size: 80%; }
 
 .unselectable {
   -moz-user-select: none;
@@ -479,6 +542,24 @@ a {
   cursor: default;
   user-select: none; }
 
+@media screen and (min-width: 520px) {
+  .text-align-left-md {
+    text-align: left; }
+
+  .text-align-center-md {
+    text-align: center; }
+
+  .text-align-right-md {
+    text-align: right; } }
+@media screen and (min-width: 800px) {
+  .text-align-left-lg {
+    text-align: left; }
+
+  .text-align-center-lg {
+    text-align: center; }
+
+  .text-align-right-lg {
+    text-align: right; } }
 .b-0 {
   border: none; }
 
