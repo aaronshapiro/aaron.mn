@@ -42,4 +42,9 @@ a {
     color: $color-body;
     padding-bottom: 4px;
     text-decoration: none;
+
+    &:hover { border-bottom: none; }
+
 }
+
+.wf-loading { visibility: hidden; }

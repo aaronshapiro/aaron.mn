@@ -85,6 +85,11 @@ a {
   color: #222;
   padding-bottom: 4px;
   text-decoration: none; }
+  a:hover {
+    border-bottom: none; }
+
+.wf-loading {
+  visibility: hidden; }
 
 .flex {
   display: flex; }
