@@ -1,8 +1,17 @@
 .container {
     margin: 0 auto;
     max-width: 1200px;
-    padding: 0 32px;
-    width: 100%; 
+    padding: 32px;
+    width: 100%;
+
+    @media screen and (min-width: $breakpoint-md) {
+        padding: 64px 32px;
+    }
+
+    @media screen and (min-width: $breakpoint-lg) {
+        padding: 128px 32px;
+    }
+
 }
 
 .column-1  { width: 8.333%; }
