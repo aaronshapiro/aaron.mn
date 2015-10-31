@@ -4,6 +4,7 @@
   box-sizing: border-box; }
 
 body {
+  -webkit-text-size-adjust: 100%;
   margin: 0; }
 
 img,
@@ -38,13 +39,17 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 2; }
+  @media screen and (min-width: 720px) {
+    body {
+      font-size: 20px; } }
 
 h1, h2, h3, h4, h5, h6, p {
   margin: 24px 0; }
 
 h1, h2, h3 {
   font-family: "futura-pt", sans-serif;
-  font-weight: 600; }
+  font-weight: 600;
+  line-height: 1.6; }
 
 h4, h5, h6 {
   font-family: "proxima-nova", sans-serif;
@@ -52,33 +57,45 @@ h4, h5, h6 {
 
 h1 {
   font-size: 32px; }
+  @media screen and (min-width: 720px) {
+    h1 {
+      font-size: 64px; } }
 
 h2 {
   font-size: 24px; }
+  @media screen and (min-width: 720px) {
+    h2 {
+      font-size: 48px; } }
 
 h3 {
   font-size: 20px; }
+  @media screen and (min-width: 720px) {
+    h3 {
+      font-size: 32px; } }
 
 h4 {
   font-size: 16px; }
+  @media screen and (min-width: 720px) {
+    h4 {
+      font-size: 20px; } }
 
 h5 {
   font-size: 13px; }
+  @media screen and (min-width: 720px) {
+    h5 {
+      font-size: 16px; } }
 
 h6 {
   font-size: 10px; }
+  @media screen and (min-width: 720px) {
+    h6 {
+      font-size: 13px; } }
 
-@media screen and (min-width: 520px) {
-  h1 {
-    font-size: 56px; }
-
-  h2 {
-    font-size: 34px; }
-
-  h3 {
-    font-size: 20px; } }
 p {
   max-width: 580px; }
+  @media screen and (min-width: 720px) {
+    p {
+      max-width: 640px; } }
 
 a {
   border-bottom: 1px solid #222;
@@ -131,7 +148,7 @@ a {
 
 .container {
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 1200px;
   padding: 0 32px;
   width: 100%; }
 
@@ -204,7 +221,7 @@ a {
 .column-offset-11 {
   margin-left: 91.666%; }
 
-@media screen and (min-width: 520px) {
+@media screen and (min-width: 720px) {
   .column-md-1 {
     width: 8.333%; }
 
@@ -273,7 +290,7 @@ a {
 
   .column-offset-md-11 {
     margin-left: 91.666%; } }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1200px) {
   .column-lg-1 {
     width: 8.333%; }
 
@@ -470,7 +487,7 @@ a {
 .nudge-top-8 {
   top: 8px; }
 
-@media screen and (max-width: 519px) {
+@media screen and (max-width: 719px) {
   .hide-sm {
     display: none; }
 
@@ -482,7 +499,7 @@ a {
 
   .show-lg {
     display: none; } }
-@media screen and (min-width: 520px) {
+@media screen and (min-width: 720px) {
   .float-left-md {
     float: left; }
 
@@ -503,7 +520,7 @@ a {
 
   .show-lg {
     display: none; } }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1200px) {
   .float-left-lg {
     float: left; }
 
@@ -527,9 +544,6 @@ a {
 
   .show-lg {
     display: block; } }
-.line-height-display {
-  line-height: 1.5; }
-
 .text-align-left {
   text-align: left; }
 
@@ -552,7 +566,7 @@ a {
   cursor: default;
   user-select: none; }
 
-@media screen and (min-width: 520px) {
+@media screen and (min-width: 720px) {
   .text-align-left-md {
     text-align: left; }
 
@@ -561,7 +575,7 @@ a {
 
   .text-align-right-md {
     text-align: right; } }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1200px) {
   .text-align-left-lg {
     text-align: left; }
 
@@ -600,7 +614,7 @@ a {
 .bl-1 {
   border-left: 1px solid rgba(0, 0, 0, 0.2); }
 
-@media (min-width: 520px) {
+@media (min-width: 720px) {
   .b-md-0 {
     border: none; }
 
@@ -630,7 +644,7 @@ a {
 
   .bl-md-1 {
     border-left: 1px solid rgba(0, 0, 0, 0.2); } }
-@media (min-width: 800px) {
+@media (min-width: 1200px) {
   .b-lg-0 {
     border: none; }
 
@@ -754,7 +768,7 @@ a {
   margin-left: auto;
   margin-right: auto; }
 
-@media (min-width: 520px) {
+@media (min-width: 720px) {
   .m-md-0 {
     margin: 0; }
 
@@ -848,7 +862,7 @@ a {
   .mx-md-a {
     margin-left: auto;
     margin-right: auto; } }
-@media (min-width: 800px) {
+@media (min-width: 1200px) {
   .m-lg-0 {
     margin: 0; }
 
@@ -1032,7 +1046,7 @@ a {
 .pl-5 {
   padding-left: 128px; }
 
-@media (min-width: 520px) {
+@media (min-width: 720px) {
   .p-md-0 {
     padding: 0; }
 
@@ -1122,7 +1136,7 @@ a {
 
   .pl-md-5 {
     padding-left: 128px; } }
-@media (min-width: 800px) {
+@media (min-width: 1200px) {
   .p-lg-0 {
     padding: 0; }
 
