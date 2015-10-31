@@ -91,12 +91,26 @@ p {
 }
 
 a {
-    border-bottom: 1px solid $color-body;
     color: $color-body;
-    padding-bottom: 4px;
+    padding-bottom: 5px;
+    position: relative;
     text-decoration: none;
 
-    &:hover { border-bottom: none; }
+    &:after {
+        background-color: $color-body;
+        bottom: 0;
+        content: '';
+        height: 1px;
+        left: 0;
+        position: absolute;
+        right: 0;
+        transition: right 0.2s ease, left 0.2s ease;
+    }
+
+    &:hover:after {
+        left: 50%;
+        right: 50%;
+    }
 
 }
 

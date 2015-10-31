@@ -98,12 +98,22 @@ p {
       max-width: 640px; } }
 
 a {
-  border-bottom: 1px solid #222;
   color: #222;
-  padding-bottom: 4px;
+  padding-bottom: 5px;
+  position: relative;
   text-decoration: none; }
-  a:hover {
-    border-bottom: none; }
+  a:after {
+    background-color: #222;
+    bottom: 0;
+    content: '';
+    height: 1px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    transition: right 0.2s ease, left 0.2s ease; }
+  a:hover:after {
+    left: 50%;
+    right: 50%; }
 
 .wf-loading {
   visibility: hidden; }
@@ -382,32 +392,14 @@ a {
   animation-name: fade-in; }
 
 .color-body {
-  border-color: #222;
   color: #222; }
+  .color-body:after {
+    background-color: #222; }
 
 .color-white {
-  border-color: #FFF;
   color: #FFF; }
-
-.color-cover {
-  border-color: #6C19DB;
-  color: #6C19DB; }
-
-.color-etsy {
-  border-color: #F76400;
-  color: #F76400; }
-
-.color-huge {
-  border-color: #EF008C;
-  color: #EF008C; }
-
-.color-instagram {
-  border-color: #004B7D;
-  color: #004B7D; }
-
-.color-twitter {
-  border-color: #50ABF1;
-  color: #50ABF1; }
+  .color-white:after {
+    background-color: #FFF; }
 
 .clearfix:before, .clearfix:after {
   content: " ";
