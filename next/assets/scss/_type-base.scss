@@ -95,6 +95,7 @@ a {
     padding-bottom: 5px;
     position: relative;
     text-decoration: none;
+    white-space: nowrap;
 
     &:after {
         background-color: $color-body;
