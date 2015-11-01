@@ -39,7 +39,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 2; }
-  @media screen and (min-width: 640px) {
+  @media screen and (min-width: 680px) {
     body {
       font-size: 20px; } }
 
@@ -57,43 +57,43 @@ h4, h5, h6 {
 
 h1 {
   font-size: 32px; }
-  @media screen and (min-width: 640px) {
+  @media screen and (min-width: 680px) {
     h1 {
       font-size: 64px; } }
 
 h2 {
   font-size: 24px; }
-  @media screen and (min-width: 640px) {
+  @media screen and (min-width: 680px) {
     h2 {
       font-size: 48px; } }
 
 h3 {
   font-size: 20px; }
-  @media screen and (min-width: 640px) {
+  @media screen and (min-width: 680px) {
     h3 {
       font-size: 32px; } }
 
 h4 {
   font-size: 16px; }
-  @media screen and (min-width: 640px) {
+  @media screen and (min-width: 680px) {
     h4 {
       font-size: 20px; } }
 
 h5 {
   font-size: 13px; }
-  @media screen and (min-width: 640px) {
+  @media screen and (min-width: 680px) {
     h5 {
       font-size: 16px; } }
 
 h6 {
   font-size: 10px; }
-  @media screen and (min-width: 640px) {
+  @media screen and (min-width: 680px) {
     h6 {
       font-size: 13px; } }
 
 p {
   max-width: 580px; }
-  @media screen and (min-width: 640px) {
+  @media screen and (min-width: 680px) {
     p {
       max-width: 640px; } }
 
@@ -162,7 +162,7 @@ a {
   max-width: 960px;
   padding: 32px;
   width: 100%; }
-  @media screen and (min-width: 640px) {
+  @media screen and (min-width: 680px) {
     .container {
       padding: 64px 32px; } }
   @media screen and (min-width: 960px) {
@@ -238,7 +238,7 @@ a {
 .column-offset-11 {
   margin-left: 91.666%; }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 680px) {
   .column-md-1 {
     width: 8.333%; }
 
@@ -438,7 +438,7 @@ a {
 .position-relative {
   position: relative; }
 
-@media screen and (max-width: 639px) {
+@media screen and (max-width: 679px) {
   .hide-sm {
     display: none; }
 
@@ -450,7 +450,7 @@ a {
 
   .show-lg {
     display: none; } }
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 680px) {
   .float-left-md {
     float: left; }
 
@@ -517,7 +517,7 @@ a {
   cursor: default;
   user-select: none; }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 680px) {
   .text-align-left-md {
     text-align: left; }
 
@@ -565,7 +565,7 @@ a {
 .bl-1 {
   border-left: 1px solid rgba(0, 0, 0, 0.2); }
 
-@media (min-width: 640px) {
+@media (min-width: 680px) {
   .b-md-0 {
     border: none; }
 
@@ -719,7 +719,7 @@ a {
   margin-left: auto;
   margin-right: auto; }
 
-@media (min-width: 640px) {
+@media (min-width: 680px) {
   .m-md-0 {
     margin: 0; }
 
@@ -997,7 +997,7 @@ a {
 .pl-5 {
   padding-left: 128px; }
 
-@media (min-width: 640px) {
+@media (min-width: 680px) {
   .p-md-0 {
     padding: 0; }
 
