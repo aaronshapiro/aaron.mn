@@ -1,3 +1,5 @@
+// Borders
+
 .b-0  { border: none; }
 .bt-0 { border-top: none; }
 .br-0 { border-right: none; }
@@ -41,6 +43,8 @@
     .bl-lg-1 { border-left: 1px solid $color-border; }
 
 }
+
+// Margins
 
 .m-0  { margin:        0; }
 .mt-0 { margin-top:    0; }
@@ -172,6 +176,8 @@
     }
 
 }
+
+// Padding
 
 .p-0  { padding:        0; }
 .pt-0 { padding-top:    0; }

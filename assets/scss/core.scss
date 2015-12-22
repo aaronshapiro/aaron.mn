@@ -1,13 +1,23 @@
+// Settings
+
 @import "variables";
 
+// Reset
+
 @import "reset";
+
+// Base
 
 @import "animation-base";
 @import "layout-base";
 @import "type-base";
 
+// Objects
+
 @import "flex";
 @import "grid";
+
+// Utilities
 
 @import "animation-utility";
 @import "color-utility";

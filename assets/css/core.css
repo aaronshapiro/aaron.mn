@@ -16,13 +16,6 @@ video {
     opacity: 0; }
   100% {
     opacity: 1; } }
-@keyframes fade-in-up {
-  0% {
-    opacity: 0;
-    transform: translateY(8px); }
-  100% {
-    opacity: 1;
-    transform: translateY(0); } }
 @keyframes carousel {
   0% {
     transform: translateX(0); }
@@ -392,11 +385,11 @@ a {
   .animated.has-delay-6 {
     animation-delay: 2.4s; }
 
-.animated-fade-in-up {
-  animation-name: fade-in-up; }
-
 .animated-fade-in {
   animation-name: fade-in; }
+
+.background-white {
+  background-color: #FFF; }
 
 .color-body {
   color: #222; }

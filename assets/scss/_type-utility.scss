@@ -1,9 +1,22 @@
-.text-align-left   { text-align: left; }
-.text-align-center { text-align: center; }
-.text-align-right  { text-align: right; }
+.text-align-left {
+	text-align: left;
+}
 
-.text-larger  { font-size: 120%; }
-.text-smaller { font-size: 80%; }
+.text-align-center {
+	text-align: center;
+}
+
+.text-align-right {
+	text-align: right;
+}
+
+.text-larger {
+	font-size: 120%;
+}
+
+.text-smaller {
+	font-size: 80%;
+}
 
 .unselectable {
     -moz-user-select: none;

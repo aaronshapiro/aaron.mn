@@ -1,3 +1,5 @@
+// Base
+
 body {
     color: $color-body;
     font-family: $font-family-body;
@@ -11,9 +13,13 @@ body {
 
 }
 
+// Headings, paragraph margin
+
 h1, h2, h3, h4, h5, h6, p {
     margin: 24px 0;
 }
+
+// Headings
 
 h1, h2, h3 {
     font-family: $font-family-display;
@@ -81,6 +87,8 @@ h6 {
 
 }
 
+// Paragraph
+
 p {
     max-width: 580px;
 
@@ -89,6 +97,8 @@ p {
     }
 
 }
+
+// Anchor
 
 a {
     color: $color-body;
@@ -115,4 +125,8 @@ a {
 
 }
 
-.wf-loading { visibility: hidden; }
+// Typekit visibility
+
+.wf-loading {
+    visibility: hidden;
+}

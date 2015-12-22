@@ -1,3 +1,5 @@
+// Clearfix
+
 .clearfix {
 
     &:before,
@@ -12,53 +14,140 @@
 
 }
 
-.fit-height { min-height: 100vh; }
-.fit-width  { width: 100%; }
+// Window sizes
 
-.float-left  { float: left; }
-.float-right { float: right; }
+.fit-height {
+    min-height: 100vh;
+}
 
-.overflow-hidden { overflow: hidden; }
-.overflow-scroll { overflow: scroll; }
+.fit-width {
+    width: 100%;
+}
 
-.position-absolute { position: absolute; }
-.position-relative { position: relative; }
+// Float
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+// Overflow
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.overflow-scroll {
+    overflow: scroll;
+}
+
+// Positioning
+
+.position-absolute {
+    position: absolute;
+}
+
+.position-relative {
+    position: relative;
+}
 
 @media screen and (max-width: $breakpoint-md - 1) {
 
-    .hide-sm { display: none; }
+    // Showing and hiding elements
 
-    .show-sm { display: block; }
-    .show-md { display: none; }
-    .show-lg { display: none; } 
+    .hide-sm {
+        display: none;
+    }
+
+    .show-sm {
+        display: block;
+    }
+    
+    .show-md {
+        display: none;
+    }
+    
+    .show-lg {
+        display: none;
+    } 
 
 }
 
 @media screen and (min-width: $breakpoint-md) {
 
-    .float-left-md  { float: left; }
-    .float-right-md { float: right; }
+    // Float
 
-    .hide-sm { display: block; }
-    .hide-md { display: none; }
+    .float-left-md {
+        float: left;
+    }
+    
+    .float-right-md {
+        float: right;
+    }
 
-    .show-sm { display: none; }
-    .show-md { display: block; }
-    .show-lg { display: none; }  
+    // Showing and hiding elements
+
+    .hide-sm {
+        display: block;
+    }
+    
+    .hide-md {
+        display: none;
+    }
+
+    .show-sm {
+        display: none;
+    }
+    
+    .show-md {
+        display: block;
+    }
+    
+    .show-lg {
+        display: none;
+    }  
 
 }
 
 @media screen and (min-width: $breakpoint-lg) {
 
-    .float-left-lg  { float: left; }
-    .float-right-lg { float: right; }
+    // Float
 
-    .hide-sm { display: block; }
-    .hide-md { display: block; }
-    .hide-lg { display: none; }
+    .float-left-lg {
+        float: left;
+    }
     
-    .show-sm { display: none; }
-    .show-md { display: none; }
-    .show-lg { display: block; }  
+    .float-right-lg {
+        float: right;
+    }
+
+    // Showing and hiding elements
+
+    .hide-sm {
+        display: block;
+    }
+    
+    .hide-md {
+        display: block;
+    }
+
+    .hide-lg {
+        display: none;
+    }
+    
+    .show-sm {
+        display: none;
+    }
+    
+    .show-md {
+        display: none;
+    }
+    
+    .show-lg {
+        display: block;
+    }  
 
 }

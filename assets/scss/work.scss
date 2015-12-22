@@ -1,9 +1,13 @@
+// Grid background for showing Origami workflows
+
 .background-origami {
     background-color: #323233;
     background-image: url(/assets/images/cover/origami-background.png);
     background-position: 50% 50%;
     background-size: 50px 50px;
 }
+
+// Hero images
 
 .hero {
     background-size: cover;
@@ -16,6 +20,8 @@
     background-image: url(/assets/images/cover/project-hero.jpg);
     color: #FFF;
 }
+
+// Animated carousel
 
 .carousel {
     position: relative;
@@ -36,9 +42,13 @@
     width: 50%;
 }
 
+// Limits height of scrolling screenshots (to be used with overflow utilities)
+
 .constrain-height {
     height: 580px;
 }
+
+// iPhone container
 
 .iphone {
     overflow: hidden;
