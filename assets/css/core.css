@@ -31,19 +31,16 @@ body {
   font-family: "proxima-nova", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  line-height: 1.8; }
+  line-height: 1.9; }
   @media screen and (min-width: 680px) {
     body {
       font-size: 18px; } }
 
-h1, h2, h3, h4, h5, h6, p {
-  margin: 24px 0; }
-  @media screen and (min-width: 680px) {
-    h1, h2, h3, h4, h5, h6, p {
-      margin: 32px 0; } }
+h1, h2, h3 {
+  margin: 32px 0; }
 
 h4, h5, h6, p {
-  margin: 24px 0; }
+  margin: 16px 0; }
 
 h1, h2, h3 {
   font-family: "utopia-std", sans-serif;
@@ -98,10 +95,13 @@ p {
 
 a {
   color: #222;
-  padding-bottom: 6px;
+  padding-bottom: 2px;
   position: relative;
   text-decoration: none;
   white-space: nowrap; }
+  @media screen and (min-width: 680px) {
+    a {
+      padding-bottom: 6px; } }
   a:after {
     background-color: #222;
     bottom: 0;
@@ -412,6 +412,12 @@ a {
   display: table; }
 .clearfix:after {
   clear: both; }
+
+.display-block {
+  display: block; }
+
+.display-inline-block {
+  display: inline-block; }
 
 .fit-height {
   min-height: 100vh; }
