@@ -5,7 +5,7 @@ body {
     font-family: $font-family-body;
     font-size: 16px;
     font-weight: 400;
-    line-height: 1.8;
+    line-height: 1.9;
 
     @media screen and (min-width: $breakpoint-md) {
         font-size: 18px;
@@ -15,17 +15,12 @@ body {
 
 // Headings, paragraph margin
 
-h1, h2, h3, h4, h5, h6, p {
-    margin: 24px 0;
-
-    @media screen and (min-width: $breakpoint-md) {
-        margin: 32px 0;
-    }
-
+h1, h2, h3 {
+    margin: $white-space-3 0;
 }
 
 h4, h5, h6, p {
-    margin: 24px 0;
+    margin: $white-space-2 0;
 }
 
 // Headings
@@ -111,10 +106,14 @@ p {
 
 a {
     color: $color-body;
-    padding-bottom: 6px;
+    padding-bottom: 2px;
     position: relative;
     text-decoration: none;
     white-space: nowrap;
+
+    @media screen and (min-width: $breakpoint-md) {
+        padding-bottom: 6px;
+    }
 
     &:after {
         background-color: $color-body;
