@@ -168,6 +168,9 @@ a {
     .container {
       padding: 128px 32px; } }
 
+.container-wide {
+  max-width: 1280px; }
+
 .column-1 {
   width: 8.333%; }
 
