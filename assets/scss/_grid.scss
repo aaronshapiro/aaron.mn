@@ -22,8 +22,18 @@
 
 .container-full {
     max-width: 1440px;
+}
+
+.container-flush {
     padding-left: 0;
     padding-right: 0;
+}
+
+.container-flush-mobile {
+    @media screen and (max-width: $breakpoint-md) {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
 // Columns, small breakpoint upward

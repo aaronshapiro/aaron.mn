@@ -172,9 +172,16 @@ a {
   max-width: 1200px; }
 
 .container-full {
-  max-width: 1440px;
+  max-width: 1440px; }
+
+.container-flush {
   padding-left: 0;
   padding-right: 0; }
+
+@media screen and (max-width: 680px) {
+  .container-flush-mobile {
+    padding-left: 0;
+    padding-right: 0; } }
 
 .column-1 {
   width: 8.333%; }
