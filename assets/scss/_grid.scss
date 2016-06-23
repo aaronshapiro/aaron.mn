@@ -17,7 +17,13 @@
 }
 
 .container-wide {
-    max-width: 1280px;
+    max-width: 1200px;
+}
+
+.container-full {
+    max-width: 1440px;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 // Columns, small breakpoint upward

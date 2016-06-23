@@ -169,7 +169,12 @@ a {
       padding: 128px 32px; } }
 
 .container-wide {
-  max-width: 1280px; }
+  max-width: 1200px; }
+
+.container-full {
+  max-width: 1440px;
+  padding-left: 0;
+  padding-right: 0; }
 
 .column-1 {
   width: 8.333%; }
