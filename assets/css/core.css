@@ -101,7 +101,7 @@ a {
   white-space: nowrap; }
   @media screen and (min-width: 680px) {
     a {
-      padding-bottom: 6px; } }
+      padding-bottom: 3px; } }
   a:after {
     background-color: #222;
     bottom: 0;
