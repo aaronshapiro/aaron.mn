@@ -294,6 +294,10 @@ video {
   @media (min-width: 650px) {
     .container-site {
       padding: 214px 0 120px; } }
+  .container-site::-webkit-scrollbar {
+    width: 0px; }
+  .container-site::-webkit-scrollbar-track-piece {
+    background-color: transparent; }
 
 .container-column, .toc-row {
   margin: 0 30px; }
