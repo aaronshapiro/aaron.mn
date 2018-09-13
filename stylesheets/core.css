@@ -82,7 +82,12 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  max-width: 100%;
+  left: 50%;
+  max-width: 1440px;
   position: fixed;
+  -webkit-transform: translatex(-50%);
+          transform: translatex(-50%);
   -webkit-transition: all 0.05s linear;
   transition: all 0.05s linear;
   width: 100%;
@@ -288,7 +293,7 @@ video {
           box-shadow: 0 0 120px rgba(0, 0, 0, 0.05);
   margin: 0 auto;
   max-width: 1440px;
-  overflow-x: hidden;
+  overflow: hidden;
   padding: 124px 0 30px;
   width: 100%; }
   @media (min-width: 650px) {
