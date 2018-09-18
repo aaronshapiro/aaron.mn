@@ -217,7 +217,9 @@ p {
   margin: 30px 0; }
   @media (min-width: 650px) {
     .media-wrap-outer {
-      margin: 60px 0; } }
+      margin: 60px 0; }
+      .media-wrap-outer.media-wrap-outer-wide {
+        margin: 60px -15vw; } }
 
 .media-wrap-outer-right {
   float: right;
